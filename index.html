@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>TRAVERSE | Rediscover Memories</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Traverse is a memory-focused Android app that helps you rediscover experiences through stories, places, and time — not just an endless photo roll." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Hero -->
+  <header class="hero">
+    <div class="hero-content">
+      <h1>TRAVERSE</h1>
+      <p class="subtitle">
+        Rediscover your memories through stories, locations, and moments —
+        instead of losing them in an endless camera roll.
+      </p>
+      <div class="buttons">
+        <a href="https://github.com/zswong/Traverse" class="btn primary" target="_blank">
+          View Source on GitHub
+        </a>
+        <a href="#download" class="btn">
+          Download Android APK
+        </a>
+      </div>
+      <p class="mini-text">
+        Built with Jetpack Compose · Room · Location · Story-based memory model
+      </p>
+    </div>
+    <div class="hero-image">
+      <img src="UI Concept_01.jpg" alt="Traverse App Preview">
+    </div>
+  </header>
+
+  <!-- Problem & Concept -->
+  <section class="section">
+    <h2>Why Traverse?</h2>
+    <p>
+      Most of us have thousands of photos, but barely remember the stories behind them.
+      Traverse is designed as a <strong>memory-first</strong> app:
+      instead of raw images, it helps you build stories tied to <strong>time, place, and narrative</strong>.
+    </p>
+  </section>
+
+  <!-- Features -->
+  <section class="section" id="features">
+    <h2>Key Features</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Story-based Memories</h3>
+        <p>
+          Create structured stories composed of segments, each with text, timestamps, and optional images —
+          so every trip, meetup, or moment becomes a readable narrative.
+        </p>
+      </div>
+      <div class="card">
+        <h3>Time & Location Context</h3>
+        <p>
+          Capture where and when your memories happen using one-shot location access,
+          inspired by how the hippocampus links place and time.
+        </p>
+      </div>
+      <div class="card">
+        <h3>Clean & Focused Interface</h3>
+        <p>
+          Built with Material 3 & Jetpack Compose for a calm, distraction-free journaling experience.
+        </p>
+      </div>
+      <div class="card">
+        <h3>Local-first Storage</h3>
+        <p>
+          Powered by Room database. Your memories are stored on-device for fast access and better control.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Screenshots -->
+  <section class="section" id="screenshots">
+    <h2>UI Preview</h2>
+    <p>
+      Traverse includes a landing screen, story list, story editor, and location-aware cards
+      to help you browse and build memories intuitively.
+    </p>
+    <div class="grid">
+      <img src="traverse-landing.png" alt="Landing Screen" class="screenshot">
+      <img src="traverse-story-list.png" alt="Story List" class="screenshot">
+      <img src="traverse-editor.png" alt="Story Editor" class="screenshot">
+    </div>
+    <p class="mini-text">
+      (Replace these images with your actual app screenshots named as above.)
+    </p>
+  </section>
+
+  <!-- Demo / Video -->
+  <section class="section" id="demo">
+    <h2>Pitch Video</h2>
+    <p>Watch a quick overview of how Traverse works:</p>
+    <div class="video-wrapper">
+      <iframe
+        src="https://www.youtube.com/watch?v=xM1BQn0mhs4"
+        title="Traverse Pitch"
+        frameborder="0"
+        allowfullscreen
+      ></iframe>
+    </div>
+  </section>
+
+  <!-- Download -->
+  <section class="section" id="download">
+    <h2>Download</h2>
+    <p>
+      You can try the current Android demo build by installing the APK below.
+      (Enable “Install from unknown sources” on your device.)
+    </p>
+    <a href="traverse-demo.apk" class="btn primary">
+      Download Traverse APK
+    </a>
+    <p class="mini-text">
+      Or build from source via <a href="https://github.com/zswong/Traverse" target="_blank">GitHub</a>.
+    </p>
+  </section>
+
+  <!-- Tech Details -->
+  <section class="section">
+    <h2>Tech Stack</h2>
+    <ul class="tech-list">
+      <li>Android · Kotlin · Jetpack Compose</li>
+      <li>Room Database for structured memory storage</li>
+      <li>Location access for context-aware memories</li>
+      <li>Material 3 design system</li>
+    </ul>
+  </section>
+
+  <!-- About -->
+  <section class="section" id="about">
+    <h2>About the Developer</h2>
+    <p>
+      This project was designed and developed as a concept app to explore how mobile experiences
+      can better support meaningful memory-making beyond generic photo streams.
+    </p>
+    <p>
+      Contact: <a href="mailto:zswong@sfu.ca">you@example.com</a> ·
+      <a href="https://github.com/zswong" target="_blank">GitHub</a>
+    </p>
+  </section>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> TRAVERSE · Hosted on GitHub Pages</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
