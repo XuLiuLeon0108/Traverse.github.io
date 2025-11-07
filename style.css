@@ -1,0 +1,171 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  line-height: 1.6;
+  color: #0f172a;
+  background: #f9fafb;
+}
+
+/* Hero */
+
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 64px 8vw 40px;
+  gap: 40px;
+  background: radial-gradient(circle at top left, #38bdf8 0, #0f172a 55%);
+  color: #eff6ff;
+}
+
+.hero-content {
+  flex: 1 1 260px;
+}
+
+.hero h1 {
+  font-size: 40px;
+  letter-spacing: 0.18em;
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  font-size: 16px;
+  opacity: 0.94;
+  margin-bottom: 18px;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  border-radius: 999px;
+  border: 1px solid rgba(148, 163, 253, 0.7);
+  text-decoration: none;
+  font-size: 14px;
+  color: inherit;
+  backdrop-filter: blur(6px);
+  transition: all 0.2s ease;
+}
+
+.btn.primary {
+  background: #38bdf8;
+  border-color: #38bdf8;
+  color: #0f172a;
+  font-weight: 600;
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 22px rgba(15, 23, 42, 0.35);
+}
+
+.mini-text {
+  font-size: 11px;
+  opacity: 0.8;
+  margin-top: 4px;
+}
+
+.hero-image img {
+  max-width: 260px;
+  border-radius: 30px;
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.6);
+  border: 1px solid rgba(148, 163, 253, 0.35);
+}
+
+/* Sections */
+
+.section {
+  padding: 48px 8vw;
+}
+
+.section h2 {
+  font-size: 24px;
+  margin-bottom: 14px;
+}
+
+.section p {
+  max-width: 760px;
+  margin-bottom: 14px;
+  color: #4b5563;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 16px;
+  margin-top: 8px;
+}
+
+.card {
+  padding: 16px;
+  background: #ffffff;
+  border-radius: 18px;
+  box-shadow: 0 2px 12px rgba(15, 23, 42, 0.07);
+}
+
+.card h3 {
+  margin-bottom: 6px;
+  font-size: 17px;
+}
+
+.screenshot {
+  width: 100%;
+  max-height: 320px;
+  object-fit: cover;
+  border-radius: 18px;
+  box-shadow: 0 4px 18px rgba(15, 23, 42, 0.18);
+}
+
+/* Video */
+
+.video-wrapper {
+  position: relative;
+  max-width: 720px;
+  aspect-ratio: 16 / 9;
+  margin-top: 8px;
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  border-radius: 18px;
+  box-shadow: 0 8px 26px rgba(15, 23, 42, 0.35);
+}
+
+/* Tech list */
+
+.tech-list {
+  list-style: none;
+  margin-top: 4px;
+  color: #4b5563;
+}
+
+.tech-list li::before {
+  content: "• ";
+  color: #38bdf8;
+}
+
+/* Footer */
+
+.footer {
+  text-align: center;
+  padding: 16px;
+  font-size: 12px;
+  color: #9ca3af;
+  border-top: 1px solid #e5e7eb;
+}
